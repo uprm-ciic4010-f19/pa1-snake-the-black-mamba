@@ -12,24 +12,38 @@ public class Images {
 
 
     public static BufferedImage[] butstart;
+    public static BufferedImage[] butreStart;
     public static BufferedImage title;
     public static BufferedImage Pause;
+    public static BufferedImage GameOver;
     public static BufferedImage[] Resume;
     public static BufferedImage[] BTitle;
     public static BufferedImage[] Options;
+    public static BufferedImage[] reStart;
+    
+    
     public static ImageIcon icon;
 
-    public Images() {
 
+    
+    public Images() {
+    	
+    	butreStart = new BufferedImage[3];
         butstart = new BufferedImage[3];
         Resume = new BufferedImage[2];
         BTitle = new BufferedImage[2];
         Options = new BufferedImage[2];
+        reStart = new BufferedImage[2];
+        
+
 
         try {
-
-            title = ImageIO.read(getClass().getResourceAsStream("/Sheets/Title.png"));
-            Pause = ImageIO.read(getClass().getResourceAsStream("/Buttons/Pause.png"));
+        	
+        	reStart[0]= ImageIO.read(getClass().getResourceAsStream("/Buttons/restar1.png"));
+        	reStart[1]= ImageIO.read(getClass().getResourceAsStream("/Buttons/restar1.png"));
+        	GameOver= ImageIO.read(getClass().getResourceAsStream("/Buttons/gameover.png"));
+            title = ImageIO.read(getClass().getResourceAsStream("/Buttons/wp2315932.png"));
+            Pause = ImageIO.read(getClass().getResourceAsStream("/Buttons/202306.png"));
             Resume[0] = ImageIO.read(getClass().getResourceAsStream("/Buttons/Resume.png"));
             Resume[1] = ImageIO.read(getClass().getResourceAsStream("/Buttons/ResumeP.png"));
             BTitle[0] = ImageIO.read(getClass().getResourceAsStream("/Buttons/BTitle.png"));
@@ -39,7 +53,8 @@ public class Images {
             butstart[0]= ImageIO.read(getClass().getResourceAsStream("/Buttons/NormBut.png"));//normbut
             butstart[1]= ImageIO.read(getClass().getResourceAsStream("/Buttons/HoverBut.png"));//hoverbut
             butstart[2]= ImageIO.read(getClass().getResourceAsStream("/Buttons/ClickedBut.png"));//clickbut
-
+            butreStart[0]= ImageIO.read(getClass().getResourceAsStream("/Buttons/BTitle.png"));//normbutrestart
+            butreStart[1]= ImageIO.read(getClass().getResourceAsStream("/Buttons/BTitleP.png"));//hoverbutrestart
             icon =  new ImageIcon(ImageIO.read(getClass().getResourceAsStream("/Sheets/icon.png")));
 
 

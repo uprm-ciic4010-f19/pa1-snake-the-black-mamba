@@ -34,6 +34,7 @@ public class PauseState extends State {
             handler.getMouseManager().setUimanager(null);
             State.setState(handler.getGame().menuState);
         }));
+        
 
 
 
@@ -60,7 +61,7 @@ public class PauseState extends State {
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Images.Pause,0,0,800,600,null);
+        g.drawImage(Images.Pause,0,0,800,800,null);
         uiManager.Render(g);
 
     }

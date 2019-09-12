@@ -47,7 +47,8 @@ public class DisplayScreen {
         canvas.setMaximumSize(new Dimension(width, height));
         canvas.setMinimumSize(new Dimension(width, height));
         canvas.setFocusable(false);
-        canvas.setBackground(Color.black);
+        canvas.setBackground(new java.awt.Color(130, 0, 200));
+     
 
         frame.add(canvas);
         frame.pack();

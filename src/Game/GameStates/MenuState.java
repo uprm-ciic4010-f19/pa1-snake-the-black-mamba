@@ -22,7 +22,7 @@ public class MenuState extends State {
         handler.getMouseManager().setUimanager(uiManager);
 
 
-        uiManager.addObjects(new UIImageButton(handler.getWidth()/2-64, handler.getHeight()/2-32, 128, 64, Images.butstart, new ClickListlener() {
+        uiManager.addObjects(new UIImageButton(handler.getWidth()/2-64, handler.getHeight() - 250, 128, 64, Images.butstart, new ClickListlener() {
             @Override
             public void onClick() {
                 handler.getMouseManager().setUimanager(null);
@@ -45,6 +45,9 @@ public class MenuState extends State {
         g.fillRect(0,0,handler.getWidth(),handler.getHeight());
         g.drawImage(Images.title,0,0,handler.getWidth(),handler.getHeight(),null);
         uiManager.Render(g);
+        g.setColor(Color.CYAN);
+        g.setFont(new Font("TimesRoman", Font.BOLD, 55 ));
+        g.drawString("Welcome to Snake", (handler.getWidth()/4) -23, (handler.getHeight()/2) + 23); 
 
     }
 
