@@ -40,7 +40,7 @@ public class Images {
         try {
         	
         	reStart[0]= ImageIO.read(getClass().getResourceAsStream("/Buttons/restar1.png"));
-        	reStart[1]= ImageIO.read(getClass().getResourceAsStream("/Buttons/restar1.png"));
+        	reStart[1]= ImageIO.read(getClass().getResourceAsStream("/Buttons/restar2.png"));
         	GameOver= ImageIO.read(getClass().getResourceAsStream("/Buttons/gameover.png"));
             title = ImageIO.read(getClass().getResourceAsStream("/Buttons/wp2315932.png"));
             Pause = ImageIO.read(getClass().getResourceAsStream("/Buttons/202306.png"));

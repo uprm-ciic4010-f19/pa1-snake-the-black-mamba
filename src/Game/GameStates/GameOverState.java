@@ -20,7 +20,7 @@ public class GameOverState extends State {
         super(handler);
         uiManager = new UIManager(handler);
         handler.getMouseManager().setUimanager(uiManager);
-        uiManager.addObjects(new UIImageButton(300, 350, 192, 96, Images.butreStart, new ClickListlener() {
+        uiManager.addObjects(new UIImageButton(325, 350, 140, 80, Images.butreStart, new ClickListlener() {
             @Override
             public void onClick() {
                 handler.getMouseManager().setUimanager(null);
@@ -29,7 +29,7 @@ public class GameOverState extends State {
             }
         }));
         
-        uiManager.addObjects(new UIImageButton(325, 425, 128, 70,  Images.reStart, new ClickListlener(){
+        uiManager.addObjects(new UIImageButton(325, 425, 140, 80,  Images.reStart, new ClickListlener(){
 			@Override
 			public void onClick() {
             handler.getMouseManager().setUimanager(null);
@@ -59,7 +59,7 @@ public class GameOverState extends State {
         g.setColor(Color.RED);
 		g.setFont(new Font("Showcard Gothic", Font.BOLD, 55 ));
         g.drawString("Game Over ", handler.getWidth() - 365, handler.getHeight() - 600);
-        g.setColor(Color.black);
+        g.setColor(Color.green);
 		g.setFont(new Font("Showcard Gothic", Font.BOLD, 55 ));
         g.drawString("Score: " + String.valueOf(handler.getWorld().player.getTailValue()), handler.getWidth() - 365, handler.getHeight() - 500);  
         
