@@ -166,7 +166,7 @@ public class Player {
 			}
 		}
 		g.setColor(Color.WHITE);
-		g.setFont(new Font("TimesRoman", Font.BOLD, 30 ));
+		g.setFont(new Font("Showcard Gothic", Font.BOLD, 30 ));
 		g.drawString("Score: " + String.valueOf(tailValue), handler.getWidth() - 465, handler.getHeight() - 750); 
 
 	}

@@ -57,8 +57,11 @@ public class GameOverState extends State {
         g.drawImage(Images.GameOver,0,0,handler.getWidth(),handler.getHeight(),null);
         uiManager.Render(g);
         g.setColor(Color.RED);
-		g.setFont(new Font("TimesRoman", Font.BOLD, 55 ));
-        g.drawString("Game Over ", handler.getWidth() - 365, handler.getHeight() - 600); 
+		g.setFont(new Font("Showcard Gothic", Font.BOLD, 55 ));
+        g.drawString("Game Over ", handler.getWidth() - 365, handler.getHeight() - 600);
+        g.setColor(Color.black);
+		g.setFont(new Font("Showcard Gothic", Font.BOLD, 55 ));
+        g.drawString("Score: " + String.valueOf(handler.getWorld().player.getTailValue()), handler.getWidth() - 365, handler.getHeight() - 500);  
         
     }
 

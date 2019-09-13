@@ -46,8 +46,8 @@ public class MenuState extends State {
         g.drawImage(Images.title,0,0,handler.getWidth(),handler.getHeight(),null);
         uiManager.Render(g);
         g.setColor(Color.CYAN);
-        g.setFont(new Font("TimesRoman", Font.BOLD, 55 ));
-        g.drawString("Welcome to Snake", (handler.getWidth()/4) -23, (handler.getHeight()/2) + 23); 
+        g.setFont(new Font("Showcard Gothic", Font.BOLD, 55 ));
+        g.drawString("Welcome to Snake!", (handler.getWidth()/5) -40, (handler.getHeight() -725)); 
 
     }
 
